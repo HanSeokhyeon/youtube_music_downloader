@@ -49,4 +49,14 @@ https://www.youtube.com/watch?v=zndvqTc4P9I
 ### 2. 실행
 ```bash
 python downloader.py <link file path>
+
+ex) python downloader.py test.csv
+```
+
+## Docker로 실행
+
+```bash
+docker run -v <project directory>:/opt/project hsh0322/youtube-dl python downloader.py <link file path>
+
+ex) docker run -v ~/youtube_music_downloader:/opt/project hsh0322/youtube-dl python downloader.py test.csv
 ```
