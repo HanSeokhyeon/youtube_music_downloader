@@ -6,6 +6,6 @@ RUN     curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/
 RUN     chmod a+rx /usr/local/bin/youtube-dl
 
 RUN     pip install --upgrade pip
-RUN     pip install numpy
+RUN     pip install numpy pandas
 
 WORKDIR		/opt/project

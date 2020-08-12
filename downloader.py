@@ -17,7 +17,13 @@ except IOError:
     print("no such {}".format(args.link_path))
     exit(-1)
 
-for i, link in enumerate(links):
+for i, (singer, song, link) in enumerate(links[1:]):
     command = "youtube-dl -x --audio-format mp3 --audio-quality 0 {}".format(link)
-    os.system(command)
-    print("{} complete".format(i+1))
+    try:
+        os.system(command)
+    except:
+        continue
+    for filename in os.listdir('./'):
+        if filename.endswith('.mp3'):
+            os.rename('./'+filename, './output/{} - {}.mp3'.format(singer, song))
+    print("{} {} - {} complete".format(i+1, singer, song))
