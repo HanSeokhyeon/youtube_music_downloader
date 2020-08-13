@@ -40,8 +40,8 @@ pip install numpy
 
 ### 1. 링크 파일 준비
 ```csv
-https://www.youtube.com/watch?v=fE2h3lGlOsk
-https://www.youtube.com/watch?v=zndvqTc4P9I
+크러쉬,OASIS,https://www.youtube.com/watch?v=fE2h3lGlOsk
+적재,잘지내,https://www.youtube.com/watch?v=zndvqTc4P9I
 ...
 ```
 위와 같은 양식으로 링크들을 넣어주면 됩니다. 파일 확장자는 csv나 txt로 작성하면 됩니다.
