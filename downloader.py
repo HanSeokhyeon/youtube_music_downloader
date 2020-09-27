@@ -17,7 +17,7 @@ except IOError:
     print("no such {}".format(args.link_path))
     exit(-1)
 
-for i, (singer, song, link) in enumerate(links[1:]):
+for i, (singer, song, link) in enumerate(links[142:]):
     command = "youtube-dl -x --audio-format mp3 --audio-quality 0 {}".format(link)
     try:
         os.system(command)
