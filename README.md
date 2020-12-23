@@ -32,6 +32,7 @@ brew install ffmpeg
 ```
 
 ### 3. numpy
+
 ```bash
 pip install numpy
 ```
