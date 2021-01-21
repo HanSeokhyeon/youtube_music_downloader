@@ -39,4 +39,4 @@ def download_music(infos):
         download_music(errors)
 
 
-download_music(links[202:])
+download_music(links[246:])
