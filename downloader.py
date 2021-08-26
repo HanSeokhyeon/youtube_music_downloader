@@ -13,7 +13,7 @@ parser.add_argument('link_path', type=str, help='file path of links')
 args = parser.parse_args()
 
 try:
-    links = np.loadtxt(args.link_path, delimiter=',', dtype=np.unicode)
+    links = np.loadtxt(args.link_path, delimiter=',', dtype=np.compat.unicode)
 except IOError:
     print("no such {}".format(args.link_path))
     exit(-1)
@@ -39,4 +39,4 @@ def download_music(infos):
         download_music(errors)
 
 
-download_music(links[246:])
+download_music(links[289:])
